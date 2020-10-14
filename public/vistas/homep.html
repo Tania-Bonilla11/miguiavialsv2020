@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+    <!-- un poco de bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Estilos personalizados-->
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <!-- jams icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <!--iconos socialmedia font awesome  -->
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <!-- logo en pestaña del navegdor -->
+    <link rel="shortcut icon" href="../../img/logo.svg"> 
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <title>Home | Miguiavialsv</title>
+</head>
+<body>
+<!-- cabecera -->
+<header class="main-header">
+    <div class="content-wrapper">
+        
+        <img class="logo" id=logo src="../../img/logo.svg" alt=logo></a><label for="logo">&nbsp; Mi guia vial sv</label>
+        <span id="open-menu-button" class="jam jam-menu"></span> 
+          <nav id="main-menu" class="main-menu">
+            <span id="close-menu-button" class="jam jam-close"></span> 
+              <ul>
+                
+                  <li>
+                      <a href="../../private/control/controlregistro.php"><img src="../../img/registro.png">Registro</a>
+                  </li>
+                  <li>
+                    <a href="juegosniños.html"><img src="../../img/kid-and-baby.png"> Juegos de Niños</a>
+                </li>
+                 
+                <li>
+                    <a href="descargas.html"><img src="../../img/multimedia-option.png"> Descargas</a>
+                </li>
+                  <li class="login-button">
+                   
+                    <button onclick="location.href='../../private/logreg/cerrar.php'"  class="btn btn-sm button dark">Cerrar Sesión</button>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+
+</header>
+  <h1 class="servicios-text">Accidentes de Tránsito</h1>
+<!-- grafico de accidentes aun no funcional -->
+<canvas id="myChart" width="400" height="100e0"></canvas>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [ 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre','Diciembre'],
+        datasets: [{
+            label: '# accidentes',
+            data: [12, 19, 3, 5, 0, 0],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+<br>
+<main class="main">
+    <section class="projects-section section-container" >
+        <h2 class="servicios-text">Menú Principal</h2>
+        <div class="content-wrapper">
+            
+            <article class="card-project">
+             <div class="image-container">
+                 <img class="video" src="../../img/situacion.png"  alt="gato-unicornio">
+             </div>
+             <div>
+                 <h3>Juegos</h3>
+                 <p>Divierte Aprendiendo</p><br>
+                  <a href="../Juegos/menujuegos.html">¡Jugar!</a>
+              </div>
+         </article>
+         <article class="card-project">
+             <div class="image-container">
+                 <img class="video" src="../../img/video-player.svg"  alt="gato-unicornio">
+             </div>
+             <div>
+                 <h3>Videos</h3>
+                 <p>Aprende conceptos básicos con nuestros videos</p><br>
+                  <a href="../../Videos/menu.html">Ver</a>
+              </div>
+         </article>
+         <article class="card-project">
+             <div class="image-container">
+                 <img class="video" src="../../img/exam.svg"  alt="gato-unicornio">
+             </div>
+             <div>
+                 <h3>Simulación de test para conducir</h3>
+                 <p>Demuestra lo que sabes</p>
+                  <a href="#">Ponte a prueba</a>
+              </div>
+         </article>
+        </div>
+
+    </section>
+</main>
+
+
+
+<!-- footer -->
+<footer class="site-footer">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+       <a href="#">Miguiavialsv</a>.
+          </p>
+        </div>
+  
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-google"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- script propio -->
+<script src="../../scripts/menu.js"></script>
+<!-- bootstrap scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+</body>
+</html>
