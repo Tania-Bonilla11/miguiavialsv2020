@@ -3,6 +3,6 @@
     session_destroy();
     $_SESSION = array();
 
-    header('location: /miguiavialsv/index.html');
+    header('location: /index.html');
 
 ?>
