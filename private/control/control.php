@@ -5,7 +5,7 @@ if(isset($_SESSION['usuario'])) {
     header('location: /miguiavialsv/public/Juegos/menujuegos.html');
 }else{
     
-    header('location: /miguiavialsv/private/LogReg/login.php');
+    header('location: /miguiavialsv/private/logreg/login.php');
 
 }
   
