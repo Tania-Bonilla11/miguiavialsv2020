@@ -47,4 +47,4 @@
             }
         }
 }
-require '../../public/LogReg/login.php';
+require '../../public/logreg/login.php';

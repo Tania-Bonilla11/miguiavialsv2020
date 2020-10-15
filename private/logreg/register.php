@@ -106,6 +106,6 @@
     }
 
 
-    require '../../public/LogReg/registrarse.php';
+    require '../../public/logreg/registrarse.php';
 
 ?>
