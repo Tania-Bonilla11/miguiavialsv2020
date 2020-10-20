@@ -3,7 +3,9 @@ body {
   width: 100%;
   height: 100%;
 }
-
+*{
+  font-family: cursive;
+}
 body {
   display: -webkit-box;
   display: flex;
@@ -16,7 +18,6 @@ body {
           flex-direction: column;
   background: #AC394D;
   overflow: hidden;
-  font-family: cursive;
   color: white;
 }
 
@@ -34,7 +35,7 @@ body {
   background: #FFCF7F;
   display: inline-block;
   margin: 0 15px 15px 0;
-  line-height: 140px;
+  /* line-height: 140px; */
   font-size: 0;
   color: #ffffff;
   text-align: center;
@@ -49,7 +50,6 @@ body {
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
-  font-family: FontAwesome;
   line-height: 75px;
 }
 .deck .card:nth-child(4n) {
@@ -87,7 +87,7 @@ body {
   margin-bottom: 10px;
 }
 #score-panel .stars {
-  margin: 0;
+ 
   padding: 0;
   display: inline-block;
   margin: 0 5px 0 0;

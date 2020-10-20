@@ -14,12 +14,12 @@
 </head>
 <h1>N I V E L  1</h1>
 <body>
-  <div style="cursor: pointer; color:white;"><i onclick="location.href='welcome.php'"class="fa fa-arrow-circle-left"> Regresar</i></div>
+  <div style="cursor: pointer; color:white;"><em onclick="location.href='welcome.php'"class="fa fa-arrow-circle-left"> Regresar</em></div>
   <div id="score-panel">
 
     <span class="moves">0</span> Movimientos
     <div class="restart">
-      <i class="fa fa-repeat">   Repetir</i>
+      <em class="fa fa-repeat">   Repetir</em>
     </div>
   </div>
 <ul class="deck"></ul>

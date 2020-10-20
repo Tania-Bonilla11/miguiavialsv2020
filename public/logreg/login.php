@@ -23,10 +23,10 @@
             <span id="close-menu-button" class="jam jam-close"></span> 
               <ul>
                   <li>
-                    <a href="../../index.html"><img>Inicio</a>
+                    <a href="../../index.html">Inicio</a>
                   </li>
                   <li>
-                    <a href="../../private/logreg/register.php"><img>Registrarse</a>
+                    <a href="../../private/logreg/register.php">Registrarse</a>
                   </li>
                   
               </ul>
@@ -89,11 +89,11 @@
     
             <div class="col-md-4 col-sm-6 col-xs-12">
               <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-google"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-              </ul>
+                <li><a class="facebook" href="#"><em class="fa fa-facebook"></em></a></li>
+                <li><a class="twitter" href="#"><em class="fa fa-twitter"></em></a></li>
+                <li><a class="dribbble" href="#"><em class="fa fa-google"></em></a></li>
+                <li><a class="linkedin" href="#"><em class="fa fa-linkedin"></em></a></li>   
+     </ul>
             </div>
           </div>
         </div>

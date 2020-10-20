@@ -19,10 +19,10 @@
             <span id="close-menu-button" class="jam jam-close"></span> 
               <ul>
                   <li>
-                    <a href="../../index.html"><img>Inicio</a>
+                    <a href="../../index.html">Inicio</a>
                   </li>
                   <li>
-                    <a href="registrarse.php"><img>Registrarse</a>
+                    <a href="registrarse.php">Registrarse</a>
                   </li>
                   
               </ul>

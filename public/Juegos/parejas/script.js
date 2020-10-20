@@ -89,7 +89,6 @@ function endGame(moves, score) {
 	Swal.fire({
 		allowEscapeKey: false,
 		allowOutsideClick: false,
-		title:'Puntaje del Jugador',
 		icon: 'success',
 		title: '¡Encontrastes las parejas!',
 		text: ' Con  ' + moves + ' Moviminetos '  + 'Prueba un nivel mas dificil o Juega de Nuevo',

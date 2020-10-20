@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: cursive;
   }
   
   body{background:DarkSeaGreen;}
@@ -67,7 +68,6 @@
     width: 30%;
     text-align: center;
     overflow: hidden;
-    cursor: pointer;
     display: block;
     user-select: none;
     padding: 5px 0;
@@ -173,7 +173,7 @@
   }
   h3{
       color: lightblue;
-      font-family:  cursive;
+     
   }
   .shadow8a:hover,
   .shadow4a:active {

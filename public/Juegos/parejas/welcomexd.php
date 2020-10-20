@@ -48,7 +48,7 @@
       
     <img class="foto1" src="../../../img/forito.png" alt="imagen 1"> 
       <details >
-         <summary>  <img style="align:right"src="../../../img/arrr.png">¿Cómo Jugar? </summary>
+         <summary>  <img class="align"src="../../../img/arrr.png"alt="instruccion">¿Cómo Jugar? </summary>
 
          <p>Existe un número par de tarjetas con imagenes de señales de tránsito,
          deberás dar clic sobre una y luego buscar la tarjeta con la misma señal de tránsito.
@@ -61,7 +61,7 @@
       </details>
       <br>
       <div class="level">
-        <h3 ><img style="align:right" src="../../../img/level.png"> Selecciona un nivel para jugar</h3>
+        <h3 ><img class="align" src="../../../img/level.png" alt="instruccion"> Selecciona un nivel para jugar</h3>
                   <br>
                   <div class="select">
                      <select require id="slct" name="slct"> 
