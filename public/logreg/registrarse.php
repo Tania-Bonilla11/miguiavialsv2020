@@ -93,10 +93,10 @@
     
             <div class="col-md-4 col-sm-6 col-xs-12">
               <ul class="social-icons">
-                <li><em class="facebook" href="#"><i class="fa fa-facebook"></i></em></li>
-                <li><em class="twitter" href="#"><i class="fa fa-twitter"></i></em></li>
-                <li><em class="dribbble" href="#"><i class="fa fa-google"></i></em></li>
-                <li><em class="linkedin" href="#"><i class="fa fa-linkedin"></i></em></li>   
+                <li><em class="facebook" href="#"><em class="fa fa-facebook"></em></em></li>
+                <li><em class="twitter" href="#"> <em class="fa fa-twitter"></em></em></li>
+                <li><em class="dribbble" href="#"><em class="fa fa-google"></em></em></li>
+                <li><em class="linkedin" href="#"><em class="fa fa-linkedin"></em></em></li>   
               </ul>
             </div>
           </div>
