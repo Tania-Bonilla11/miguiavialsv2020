@@ -75,17 +75,17 @@ class capacitador{
         ');
         return $this->respuesta = $this->db->obtener_datos();
     }
-    public function eliminarCapacitador($idCpacitador=''){
+    // public function eliminarCapacitador($idCpacitador=''){
     
-            $this->db->consultas( '
-                delete capacitador
-                from capacitador
-                where capacitador.idCapacitador = "'.$idCapacitador.'"
-            ');
+    //         $this->db->consultas( '
+    //             delete capacitador
+    //             from capacitador
+    //             where capacitador.idCapacitador = "'.$idCapacitador.'"
+    //         ');
            
-                $this->respuesta['msg'] = 'Registro eliminado correctamente';
+    //             $this->respuesta['msg'] = 'Registro eliminado correctamente';
       
-    }
+    // }
  
 }
 ?>
