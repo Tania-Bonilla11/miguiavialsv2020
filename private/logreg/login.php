@@ -19,7 +19,7 @@
         }
         else {
             // Cambio en la conexion a la base de datos a Conexion/DB.php
-            include_once('../../DB/Conexion/DB.php');
+            include_once('../../private/DB/Conexion/DB.php');
             
             $statement = $conexion->prepare('
             SELECT id, usuario, clave, privilegio FROM login WHERE usuario = :usuario AND clave = :clave '
@@ -38,7 +38,7 @@
                 $_SESSION['privilegio'] = $resultado->privilegio;
 
                 if(isset($_SESSION['usuario'])){
-                    header('location: ../control/principal.php ');
+                    header('location: .././../../control/principal.php ');
                 }
             }else {
                 $error .= '<div class="alert alert-danger" role="alert">

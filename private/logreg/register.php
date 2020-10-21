@@ -61,7 +61,7 @@
         }else{
         
         
-            include_once('../../DB/Conexion/DB.php');
+            include_once('../../private/DB/Conexion/DB.php');
             
             $statement = $conexion->prepare('SELECT * FROM login WHERE usuario = :usuario LIMIT 1');
             $statement->execute(array(':usuario' => $usuario));
