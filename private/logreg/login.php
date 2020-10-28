@@ -38,7 +38,7 @@
                 $_SESSION['privilegio'] = $resultado->privilegio;
 
                 if(isset($_SESSION['usuario'])){
-                    header('location: .././../../control/principal.php ');
+                    header('location: ../../../../private/control/principal.php ');
                 }
             }else {
                 $error .= '<div class="alert alert-danger" role="alert">
