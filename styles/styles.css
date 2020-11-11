@@ -4,12 +4,10 @@
 /*  Importación de fuentes desde Google Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 
-/*  Importación de fuentes desde un archivo del mismo proyecto  */
-@font-face {
-  font-family : 'Proxima Nova Rg';
-  src         : url('/files/proxima-nova-bold.otf');
-}
 
+*{
+  font-family:'Open Sans', sans-serif;
+}
 :root {
   /*  Variables del proyecto  */
 
@@ -20,7 +18,7 @@
   --primary-color     :  #30475e;
   --primary-color-alt : #054d9b;
   --title-color       : #121F26;
-  --label:             #121F26;
+  --label:              #121F26;
   --text-color        : #676F73;
   --body-bg-color     : #FAFDFF;
   --white-color       : #ffffff;
@@ -111,12 +109,16 @@ a {
 p.videocaption{
 color: var(--title-color);
 margin-top  : 0;
-text-align: start;
+text-align: left;
+margin-left: unset;
+white-space:nowrap;
+
 
 }
 
 p {
   margin-top : 0;
+  font-family : var(--title-font);
 }
 .servicios-text{
   margin-top  : 0;

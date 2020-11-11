@@ -1,0 +1,75 @@
+<form v-on:submit.prevent="guardarCapacitador" data-accion="nuevo" data-idcapacitador='' method="post" id="frm-capacitador">
+    <div class="card border-danger mb-4" style="max-width: 24rem;">
+        <div class="card-header" style="background-color: #30475e;">
+            <label style="color:white">Registro Capacitador</label> 
+            
+
+            <button type="button" id="btn-close-capacitador" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="card-body">
+           
+           <div class="d-inline-flex p-2">
+                
+               <input type="text" v-model="capacitador.usuario" placeholder="Usuario" class="form-control">
+                 &nbsp;
+                 &nbsp;
+                
+                <input type="text" v-model="capacitador.nombre" placeholder="Nombre" class="form-control">
+                
+                 &nbsp;
+                 &nbsp;
+                
+                 <input type="text" v-model="capacitador.apellido" placeholder="Apellido" class="form-control">
+            </div>
+           
+            <div class="d-inline-flex p-2">
+              
+                    <input type="email" v-model="capacitador.correo" placeholder="Correo" class="form-control"> &nbsp;&nbsp;
+                    <input type="password" v-model="capacitador.clave" placeholder="Clave" class="form-control">
+                  
+              
+            </div>
+            <div class="d-inline-flex p-2">
+               
+                   
+                    <input type="text" v-model="capacitador.direccion" placeholder="Direccion" class="form-control">&nbsp;&nbsp;
+                        <input type="text" v-model="capacitador.telefono" placeholder="Telefono" class="form-control">
+                        <input style="visibility:hidden" type="text" v-model="capacitador.privilegio" value="1" class="form-control">
+               
+                
+                
+                
+            </div>
+            <div class="row p-2">
+                <div class="col-4">
+                
+                </div>
+                <div class="col-10">
+                   
+                 
+                    <select name=""class="form-control"id="selectGenero" v-model="capacitador.genero">
+                        <option value="">--Seleccionar Genero--</option>
+                        <option value="masculino">masculino</option>
+                        <option value="femenino">femenino</option>
+                    
+                    </select>
+                    
+            </div> 
+            
+           
+            <div class="row p-2">
+                <div class="col-12 text-center">
+                    <input id="btnGuardarCapacitador" type="submit" class="btn btn-primary text-white"
+                        value="Guardar">
+                    <input type="reset" class="btn btn-warning text-white" value="Limpiar">
+                    <input type="button" class="btn btn-success mostrar-buscar-capacitador text-white"
+                        data-modulo="capacitador" data-form="buscar-capacitador" value="Buscar">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</form>
+<script src="../vistas/Capacitador/capacitador.js"></script>
