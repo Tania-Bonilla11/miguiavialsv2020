@@ -164,6 +164,7 @@ function gotoInstructions(){
 
 }
 function startQuiz(){
+    resetQuiz();
     //hide homebox
     homeBox.classList.add("hide");
     quizBox.classList.remove("hide");
