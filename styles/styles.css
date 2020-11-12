@@ -102,12 +102,16 @@ body {
   line-height      : var(--body-line-height);
   background-color : var(--body-bg-color);
 }
+.mmCard.shadow4a.bBeige{
+  padding: 15px;
 
+
+}
 a {
   color : var(--primary-color);
 }
 p.videocaption{
-color: var(--title-color);
+color: var(--text-color);
 margin-top  : 0;
 text-align: left;
 margin-left: unset;
