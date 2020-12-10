@@ -17,7 +17,7 @@ const quiz=[
         answer:3
       },
       {
-        q:"¿La Dirección general de transito depende de?",
+        q:"¿La dirección general de transito depende de?",
         options:['Asamblea legislativa.','Viceministerio de transporte.','Ministerio de turismo.','Gobierno'],
         answer:1
       },

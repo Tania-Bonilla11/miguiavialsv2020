@@ -4,6 +4,10 @@
 /*  Importación de fuentes desde Google Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Spartan:wght@700&display=swap');
+
 
 *{
   font-family:'Open Sans', sans-serif;
@@ -16,10 +20,10 @@
 
   /*  Colores  */
   --primary-color     :  #30475e;
-  --primary-color-alt : #054d9b;
+  --primary-color-alt : #eceef0;
   --title-color       : #121F26;
   --label:              #121F26;
-  --text-color        : #676F73;
+  --text-color        : #1b1c1d;
   --body-bg-color     : #FAFDFF;
   --white-color       : #ffffff;
   --color             : var(--primary-color);
@@ -27,7 +31,7 @@
 
   /*  Fuentes  */
   --body-font  : 'Open Sans', sans-serif;
-  --title-font : 'Proxima Nova Rg', sans-serif;
+  --title-font : 'Roboto', sans-serif;
 
   /*  Tamaños  */
   --header-height     : 3rem;
@@ -80,12 +84,16 @@
   }
 
 }
-label{
-  color: var(--label);
+
+label b{
+  padding-bottom: 15px;
+  color: var(--primary-color);
   list-style   : none;
   padding-left : 0;
   margin       : 0;
   font-size: x-large;
+  font-family: 'Spartan', sans-serif;
+
   
   
 }
@@ -104,13 +112,13 @@ body {
 }
 .mmCard.shadow4a.bBeige{
   padding: 15px;
-
+ 
 
 }
 a {
   color : var(--primary-color);
 }
-p.videocaption{
+ p.videocaption{
 color: var(--text-color);
 margin-top  : 0;
 text-align: left;
@@ -118,7 +126,7 @@ margin-left: unset;
 white-space:nowrap;
 
 
-}
+} 
 
 p {
   margin-top : 0;
@@ -199,6 +207,7 @@ h4 {
   text-align : center;
 }
 
+
 .image-container {
   width          : 100%;
   height         : 0%;
@@ -256,10 +265,12 @@ h4 {
   border          : 1px solid var(--color);
 }
 
-.button:hover {
+/* .button:hover {
   background : var(--color-alt);
+} */
+ .logo img{
+  width: 100%;
 }
-
 .login-button{
   padding-bottom: 0.2cm;
   padding-top: 0.2cm;
@@ -280,11 +291,11 @@ h4 {
   color      : var(--color);
   background : transparent;
 }
-
+/* 
 .button.ghost:hover {
   color      : var(--white-color);
   background : var(--color);
-}
+} */
 
 .button.ghost.white:hover {
   color      : var(--primary-color);
@@ -561,11 +572,13 @@ h4 {
 }
 #titledes,#titledescarga {
   color : var(--label);
+  font-family: 'Spartan', sans-serif;
 }
 
 
-.descarga-section p {
-  opacity : 0.85;
+.descarga-us , .section-container{
+  height: 358px;
+
 }
 
 .descarga-section p:first-of-type {
@@ -671,7 +684,7 @@ h4 {
 
 .project-item article > div:first-of-type p {
   margin-bottom : 0;
-  opacity       : 0.8;
+  /* opacity       : 0.8; */
   font-size     : var(--small-font-size);
 }
 
@@ -758,7 +771,7 @@ h4 {
 }
 
 .card-project p {
-  margin-bottom : 1rem;
+  margin-bottom : 2rem;
 }
 
 .card-project a span:first-of-type {
@@ -784,9 +797,12 @@ h4 {
 
 .descarga-item {
   display    : grid;
-  gap        : 1.5rem;
+  gap        : 5.5rem;
   text-align : center;
+  
 }
+
+
 
 .descarga-item > div:first-of-type {
   order : 2;
@@ -908,7 +924,7 @@ h4 {
 .textos-questions11 p {
   font-weight: 100;
   margin-top: 14px;
-  color: #5D6678;
+  color: var(--primary-color);
   background:white;
 }
 
@@ -942,7 +958,7 @@ h4 {
 
 .sectionfoot{
   width: 100%;
-  height:100vh;
+  height:69vh;
   background-color: #30475e;
   display: flex;
   align-items:center;
@@ -950,7 +966,7 @@ h4 {
 }
 
 
-.accordion-item{
+/* .accordion-item{
 background-color: ivory;
 border-radius: .4rem;
 margin-bottom: 1rem;
@@ -958,14 +974,14 @@ padding: 1rem;
 box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
 
 
-}
+} */
 
 
-.accordion-link{
+.accordion-link .accordion-item {
   font-size: 1.6rem;
-  color: rgba(255, 255, 255, .8);
+  color: rgba(17, 17, 17, 0.8);
   text-decoration: none;
-  background-color:#343a40 ;
+  background-color:#464c52 ;
   width: 100%;
   display: flex;
   align-items: center;
@@ -978,6 +994,17 @@ box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
   padding: .5rem;
   
   }
+  .descarga-item ul li {
+    color: #8b8b8b;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #333;
+    
+
+  }
+
+ 
   .accordion-link .ion-md-remove{
   display: none;
   
@@ -985,12 +1012,16 @@ box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
   .modulos{
     position: absolute;
   }
-  
-  .answer{
+
+ 
+  .answer {
    max-height: 0;
    overflow: hidden;
    position: relative;
-   background-color:ivory;
+   background-color:white;
+   font-family:'roboto';
+   color: black;
+   
    transition:  max-height 650ms;
   
   
@@ -1016,11 +1047,18 @@ box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
   transform: translateY(-50%);
   
   }
+  @media only screen and (max-width: 600px) {
+    #carouselExampleIndicators {
+      height: 272px;
+    }
+  }
   
-  .answer p{
-    color : rgba(7, 3, 3, 0.6);
-    font-size: .9rem;
+  .answer label{
+   
+    font-size: 14px;
     padding: 2rem;
+
+    
     
     }
   .accordion-item:target .answer{
@@ -1034,25 +1072,11 @@ box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
   .accordion-item:target .accordion-link .ion-md-remove{
     display: block;
   }
-  .textos-questions11 a {
-    margin: 28px 0 0 0;
-    width: 130px;
-    background: white;
-    display: inline-block;
-    text-align: center;
-    color: #fff;
-    padding: 12px 0;
-    text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-radius: 5px;
-    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
-  }
+  
 
 .sectionfooter{
   width: 100%;
-  height:100vh;
+  height:40vh;
   background-color: #30475e;
   display: flex;
   align-items:center;
@@ -1074,7 +1098,7 @@ box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
     padding: 0 1.5rem;
   }
   .accordion-item{
-    background-color: ivory;
+    background-color: rgb(255, 255, 255);
     border-radius: .4rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -1093,11 +1117,13 @@ box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
 /*footer*/
 .site-footer
 {
+  
   background-color:#343a40 ;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:#737373;
+
 }
 .site-footer hr
 {
@@ -1286,13 +1312,13 @@ box-shadow:.5rem 2px .5rem rgba(0, 0,0, .1) ;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 5rem;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 45rem;
+  height: 35rem;
 }
 .carousel-item > img {
   position: absolute;

@@ -1,26 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+:root{
+  --primary-color     :  #30475e;
+}
 .card {
-    background: #fff;
-    border-radius: 2px;
-    display: inline-block;
-    height: 280px;
-    margin: 1rem;
-    position: relative;
-    width: 350px;
-    text-align: center;
-  }
-  
-  .card-1 {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
-  
-  .card-1:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
-  .center{
-    align-content: center;
-    padding-left: 2rem;
+  color:var(--primary-color);
+  float: left;
+  width: calc(30% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  height: 259px;
+  justify-content: center;
+   align-items: center;
+}
+.cardContainer{
 
-    columns: 3;
+  margin-left: 100px;
+}
+.card p {
+  font-size: 20px;
+}
+.img{
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+     width: 90%;
+    
   }
+  .cardContainer{
+    margin-left: 0%;
+  }
+}
+.button.dark {
+  --color     : var(--primary-color);
+  
+ 
+  color       : var(--white-color);
+}
+.button.ghost {
+  color      : var(--color);
+  background : transparent;
+}
+
+.button.ghost:hover {
+  color      : var(--white-color);
+  background : var(--color);
+} 
+.card:hover {
+  transform: translateY(-.3%);
+  box-shadow: 0 4rem 8rem rgba(196, 102, 102, 0.2);
+}

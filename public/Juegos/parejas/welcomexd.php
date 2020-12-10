@@ -26,7 +26,7 @@
    <header class="main-header">
    <div class="content-wrapper">
         
-        <img class="logo" id=logo src="../../../img/logo.svg" alt=logo></a><label for="logo">&nbsp; Mi guia vial sv</label>
+        <img class="logo" id=logo src="../../../img/logo.svg" alt=logo></a><label for="logo">&nbsp; <b> Mi guia vial sv</b>  </label>
         <span id="open-menu-button" class="jam jam-menu"></span> 
           <nav id="main-menu" class="main-menu">
             <span id="close-menu-button" class="jam jam-close"></span> 
