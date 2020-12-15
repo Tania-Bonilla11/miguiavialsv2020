@@ -1,7 +1,7 @@
 <?php session_start();
 
 if(isset($_SESSION['usuario'])) {
-    //Mostrando vistas segun el provilegio
+    //Mostrando vistas segun el privilegio
     if ($_SESSION['privilegio'] == 1) {
         header('location: ../../../../public/vistas/homep.html');
     }else if($_SESSION['privilegio'] == 2){
