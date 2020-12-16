@@ -13,7 +13,7 @@
     <!-- Estilos personalizados-->
     <link rel="stylesheet" href="../../../styles/styles.css">
     <link rel="stylesheet" href="../../../styles/estilojuegos.css">
-    <title>Acciones | Miguiavial</title>
+    <title>Decisiones | Miguiavial</title>
     
  
 </head>
@@ -28,7 +28,7 @@
               <ul>
                   
                   <li>
-                      <a href="#"><i class="fa fa-map-signs fa-2x" aria-hidden="true"></i>Te encuentras en juego de Acciones</a>
+                      <a href="#"><i class="fa fa-map-signs fa-2x" aria-hidden="true"></i>Te encuentras en juego Deciones</a>
                   </li>
                   <li>
                   <a href="../../../private/control/control.php"><i class="fa fa-gamepad fa-2x" aria-hidden="true"> &nbsp;</i>Menú juegos</a>
@@ -43,27 +43,23 @@
 
  <form class="instruccioness" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
   <br><br>
-     <img class="foto1" src="../../../img/situacion.png" alt="imagen 1"> <br>
+     <img class="foto1" src="../../../img/interface (1).png" alt="imagen 1"> <br>
     
       <h3>Instrucciones</h3>
+      <br>
       <hr>
         <p>
-           Se te presentarán una serie de situaciones hipotéticas
-          al mismo tiempo, opciones de las cuales puedes escoger la que 
-          creas conveniente llevar a cabo en dicha situación.
+           Se te presentarán señales de tránsito debes decidir cual enunciado tiene relación con la señal
+           mostrada.
         </p>
     
-      
+        <a href='jugar.html'type="button" class="btn btn-play">C O M E N Z A R</a>
                  
-    </div>
-    <BR><a href='jugar.php'type="button" class="btn  btn-lg btn-block btn-play">C O M E N Z A R</a>
-    <BR>
-   
-      
-
-         
+    </div>  
 
       </div> 
+      
+
 
 
 

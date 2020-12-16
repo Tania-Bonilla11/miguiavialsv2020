@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../img/logo.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script> 
+     <!-- Normalize css -->
+     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+      <!-- jams icons -->
+      <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+      <!--iconos socialmedia font awesome  -->
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <title>Decidelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <h2 class="servicios-text"><em onclick="location.href='decisiones.php'" class="fa fa-arrow-left" aria-hidden="true"></em> Regresar</h2>
+    <h1 class="servicios-text">¿Qué enunciado es el correcto?</h1>
+    <p>Debes decidir el enunciado que mejor identifique el mensaje de la señal de tránsito.</p>
+    <div id="quiz">
+        <!--quiz quiz screen-->
+        <div id="quiz-quiz-cont" style="display: grid;">
+            <div id="quiz-header">
+                <span id="retry_but" class="quiz-header-but"><i class="fa fa-question"></i></span>
+                <span id="show_ans_but" class="quiz-link-but">Mostrar respuesta</span>
+            </div>
+            <div id="quiz-title">
+                <h4 id="quiz_title">How Much Does It Take To Make It</h4>
+            </div>
+            <div id="quiz-body">
+                <div id="quiz-img-cont"><img id="quiz_img" src="imgs/img1.jpeg"></div>
+                <div id="quiz-choices-cont">
+                    <!--<span class="quiz-choice-but">200 Years</span>
+                    <span class="quiz-choice-but">400 Years</span>
+                    <span class="quiz-choice-but">1000 Years</span>-->
+                </div>
+            </div>
+        </div>
+        <!--quiz res screen-->
+        <div id="quiz-res-cont" style="display: none;">
+            <div id="score-outer-cont"><div id="score-cont">10/10</div></div>
+            <div id="quiz-res-retry-but"><i class="fa fa-undo"></i></div>
+            <span id="quiz_res_info1" class="quiz-res-info">No <span class="txt-success">info</span> for now</span>
+            <span id="quiz_res_info2" class="quiz-res-info">No <span class="txt-danger">info</span> for now</span>
+        </div>
+    </div>
+    <script type="module" src="../../../scripts/menu.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
