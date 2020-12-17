@@ -67,7 +67,7 @@ questionCounter++;
    
 
 }
-
+/**funcion obtener resultado */
 function getResult(element){
 
     const id = parseInt(element.id);
@@ -86,7 +86,7 @@ function getResult(element){
     unclickableOptions();
 
 }
-
+/**funcion para no seleccionar otra respuesta */
 function unclickableOptions(){
  const optionLen= optionContainer.children.length;
  for(let i=0;i<optionLen;i++){
@@ -94,7 +94,7 @@ function unclickableOptions(){
 
  }
 }
-
+/**funcion muestra numero de pregunta */
 function answersIndicator(){
     answersIndicatorContainer.innerHTML='';
     const totalQuestion=quiz.length;
@@ -104,7 +104,7 @@ function answersIndicator(){
 
     }
 }
-
+/**obtener nueva pregunta */
 function next(){
     if(questionCounter===quiz.length){
         quizOver();
@@ -125,6 +125,7 @@ function updateAnswerIndicator(markType){
 
 
 }
+/**funcion terminar juego */
 function quizOver(){
     //hidequizbox
 
@@ -134,6 +135,7 @@ function quizOver(){
     resultBox.classList.remove("hide");
     quizResult();
 }
+/**resultado juego */
 function quizResult(){
 
     resultBox.querySelector(".total-question").innerHTML=quiz.length;
@@ -144,6 +146,7 @@ function quizResult(){
     resultBox.querySelector(".total-score").innerHTML=correctAnswers+"/"+quiz.length;
 
 }
+/**funcion intentar nuevamente */
 function tryAgainQuiz(){
     resultBox.classList.add("hide");
     quizBox.classList.remove("hide"); 
@@ -156,6 +159,7 @@ function resetQuiz(){
      correctAnswers=0;
      attempt=0;
 };
+/**mostrar instrucciones */
 function gotoInstructions(){
 //  hideresultbox
  resultBox.classList.add("hide");
@@ -163,6 +167,7 @@ function gotoInstructions(){
  resetQuiz();
 
 }
+/**comenzar quiz */
 function startQuiz(){
     resetQuiz();
     //hide homebox

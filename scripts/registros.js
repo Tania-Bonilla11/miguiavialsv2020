@@ -1,3 +1,4 @@
+/**funcion para mostrar formularios en registros */
 function init() {
     
     $("[class*='mostrar']").click(function (e) {

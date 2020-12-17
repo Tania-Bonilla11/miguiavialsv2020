@@ -1,4 +1,5 @@
 var Quiz=function(data){
+    /**se llaman las clases de html */
     var _=this;
     //ui
     this.quiz_cont=document.getElementById("quiz-quiz-cont");
@@ -53,7 +54,7 @@ var Quiz=function(data){
             _.showResultScreen();
         }
     }
-
+     /**colores de opcion de respuesta */
     this.checkUserAnswer=function(ans,button){
         if(ans==_.currentQuestion.answer){
             _.score++;
@@ -74,7 +75,7 @@ var Quiz=function(data){
         button.innerText=txt;
         return button;
     }
-
+    /**randomizar opciones de respuesta */
     this.shuffleChoices=function(){
         let j=0;
         for(let i=0;i<_.data_count;i++){
@@ -101,7 +102,7 @@ var Quiz=function(data){
         _.update();
         _.res_cont.style.display="none";
     }
-
+    /** mostrar resultado erroneas y correctas */
     this.showResultScreen=function(){
         _.score_cont.innerText=_.score+"/"+_.data_count;
         _.quiz_res_info1.innerHTML="<span class='txt-success'>"+_.rightCount+"</span> Correctas";

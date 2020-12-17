@@ -1,3 +1,4 @@
+/** codigo que permite mostrar el icono de navbar cuando la panatalla se hace pequeña*/ 
 const activeMenu=()=>{
     const OpenMenuButton=document.getElementById('open-menu-button')
     const closeMenuButton=document.getElementById('close-menu-button')

@@ -85,7 +85,7 @@ function endGame(moves, score) {
 			alert('Disculpe, existió un problema');
 		}
 	});
-
+  /** uso de notificaciones para mostrar movimientos */
 	Swal.fire({
 		allowEscapeKey: false,
 		allowOutsideClick: false,
@@ -170,7 +170,7 @@ $deck.on('click', '.card:not(".match, .open")', function() {
   $this.addClass('open show');
 	opened.push(card);
 
-	// Compare with opened card
+	// Compara con card 
   if (opened.length > 1) {
     if (card === opened[0]) {
       $deck.find('.open').addClass('match animated infinite rubberBand');
@@ -193,7 +193,7 @@ $deck.on('click', '.card:not(".match, .open")', function() {
 		$moveNum.html(moves);
   }
 	
-	// End Game if match all cards
+	// Termina juego si se encuentran todas en pareja
 	if (gameCardsQTY === match) {
 		setRating(moves);
 		var score = setRating(moves).score;

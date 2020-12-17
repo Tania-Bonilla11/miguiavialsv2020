@@ -2,7 +2,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 const Transition = ReactTransitionGroup.Transition;
 const TransitionGroup = ReactTransitionGroup.TransitionGroup;
 const CSSTransition = ReactTransitionGroup.CSSTransition;
-
+/**constructor ,llamar pregunta seiguiente */
 class Quiz extends React.Component {
   constructor(props) {
     super(props);_defineProperty(this, "triggerAnimation",
@@ -102,7 +102,7 @@ class Quiz extends React.Component {
 
   }}
 
-
+/**creacion de elementos */
 class Header extends React.Component {
   constructor(props) {
     super(props);_defineProperty(this, "isStart",
