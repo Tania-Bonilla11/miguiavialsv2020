@@ -1,4 +1,14 @@
-
+/**
+   * main.js-> js principal de test prueba VMT
+   * codigo que permite colocar las preguntas y opciones de respuesta
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
+/**
+ * declaracion de variables constantes que hacen referencia al numero de preguntas y contenedores
+ * para mostrar la informacion del test
+ */
 
 const questionNUmber= document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");

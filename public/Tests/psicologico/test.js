@@ -1,5 +1,11 @@
 
-// array of objects
+/**
+   * Array que posee las preguntas del test psicologico
+   * con opciones de respuesta utilizadas en main.js
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 const quiz=[
     {
       q:"¿Cómo debe ser mi comportamiento cuándo un peatón se cruza delante de mí, mientras voy conduciendo?",

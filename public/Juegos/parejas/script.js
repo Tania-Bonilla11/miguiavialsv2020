@@ -1,3 +1,16 @@
+/**
+   * script.js-> js principal de juego parejas
+   * codigo que permite funcionalidad para encontrar parejas
+   * numero de movimientos uso de ajax
+   * 
+   *@version->  17/12/20
+   * @author-> Tania Bonilla  
+   */
+/**
+ * declaracion de variables constantes para agregar elementos de estilo 
+ */
+
+
 var symbols = ['warning', 'warning', 'wheelchair', 'wheelchair', 'ban', 'ban', 'cutlery', 'cutlery'],
 		opened = [],
 		match = 0,
@@ -13,7 +26,8 @@ var symbols = ['warning', 'warning', 'wheelchair', 'wheelchair', 'ban', 'ban', '
 		rank2stars = gameCardsQTY + 6,
 		rank1stars = gameCardsQTY + 10;
 
-// Shuffle function From http://stackoverflow.com/a/2450976
+/**
+ * Shuffle function From http://stackoverflow.com/a/2450976*/
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 	
@@ -57,12 +71,15 @@ function setRating(moves) {
 	return { score: rating };
 };
 
-// End Game
+/**finalizar juego
+ * uso de ajax
+ */
 function endGame(moves, score) {
 	var resp = '';
 
 	$.ajax({
-		// la URL para la petición
+		/** la URL para la petición */
+		
 		url : '../../../private/Modulos/Juegos/guardarHistorial.php',
 		// la información a enviar
 		// (también es posible utilizar una cadena de datos)
@@ -71,16 +88,16 @@ function endGame(moves, score) {
 			nivel : level,
 			mov : moves
 		},
-		// especifica si será una petición POST o GET
+		/**  especifica si será una petición POST o GET*/
 		type : 'POST',
-		// código a ejecutar si la petición es satisfactoria;
-		// la respuesta es pasada como argumento a la función
+		/**código a ejecutar si la petición es satisfactoria;
+		la respuesta es pasada como argumento a la función**/
 		success : function(data) {
 			resp = data;
 		},
-		// código a ejecutar si la petición falla;
-		// son pasados como argumentos a la función
-		// el objeto de la petición en crudo y código de estatus de la petición
+		 /**código a ejecutar si la petición falla;
+		 son pasados como argumentos a la función
+		 el objeto de la petición en crudo y código de estatus de la petición**/
 		error : function(xhr, status) {
 			alert('Disculpe, existió un problema');
 		}

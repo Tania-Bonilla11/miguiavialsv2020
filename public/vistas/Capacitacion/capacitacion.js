@@ -1,3 +1,10 @@
+/**
+   * Uso de vue para enviar datos en forma de objeto capacitacion a backend
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
+
 var appcapacitacion = new Vue({
     el:'#frm-capacitacion',
     data:{

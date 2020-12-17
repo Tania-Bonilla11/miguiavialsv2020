@@ -1,3 +1,10 @@
+/**
+   * Array que posee las preguntas del test pruebalibre
+   * con opciones de respuesta utilizadas en main.js
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 const quiz=[
     {
         q:"¿Estacionarse en parada de buses es una infracción?",

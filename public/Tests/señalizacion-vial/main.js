@@ -1,4 +1,14 @@
-
+/**
+   * main.js-> js principal de test señalizacion vial
+   * codigo que permite colocar las preguntas y opciones de respuesta
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
+/**
+ * declaracion de variables constantes que hacen referencia al numero de preguntas y contenedores
+ * para mostrar la informacion del test
+ */
 
 const questionNUmber= document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
@@ -24,8 +34,8 @@ function setAvailableQuestions(){
 }
 function getNewQuestion(){
  questionNUmber.innerHTML="Pregunta &nbsp;"+(questionCounter+1)+ "&nbsp; de  &nbsp;" + quiz.length;   
- //set question text
- //get random question
+ /**set question text
+ get random question*/
  const questionIndex= availableQuesitons[Math.floor(Math.random()*availableQuesitons.length)];
 //  console.log(questionIndex);
 currentQuestion= questionIndex;

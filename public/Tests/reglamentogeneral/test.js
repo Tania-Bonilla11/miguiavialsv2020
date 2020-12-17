@@ -1,5 +1,11 @@
 
-// array of objects
+/**
+   * Array que posee las preguntas del test reglamento general
+   * con opciones de respuesta utilizadas en main.js
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 const quiz=[
     {
       q:"	¿Todo vehículo debe estar provisto de?",

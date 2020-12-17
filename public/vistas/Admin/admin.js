@@ -1,3 +1,9 @@
+/**
+   * Uso de vue para enviar datos en forma de objeto admin a backend
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 var appadmin = new Vue({
   el:'#frm-Admin',
   data:{
@@ -12,6 +18,9 @@ var appadmin = new Vue({
           msg          :''
           }
       },
+      /**
+       * Metodos para recibir datos de procesos de php 
+       */
       methods:{
           guardarAdmin:function(){
               fetch(`private/Modulos/Admin/procesos.php?proceso=recibirDatos&admin=${JSON.stringify(this.admin)}`).then(resp => resp.json()).then(resp=>{

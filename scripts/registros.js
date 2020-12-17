@@ -1,10 +1,15 @@
-/**funcion para mostrar formularios en registros */
+/**
+   * Funcion que muestra formularios en pantalla
+   * de registros para mantenimiento de datos cpacitador y administrador.
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 function init() {
     
     $("[class*='mostrar']").click(function (e) {
         let modulo = $(this).data("modulo"),
             form = $(this).data("form");
-
+         
         $(`#vista-${form}`).load(`../vistas/${modulo}/${form}.html`, function () {
             $(`#btn-close-${form}`).click(() => {
                 $(`#vista-${form}`).html("");

@@ -1,3 +1,10 @@
+/**
+   * Array que posee las preguntas delseñalizacion vial
+   * con opciones de respuesta utilizadas en main.js
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 const quiz=[
     {
         q:"¿La luz roja en el semáforo significa?",

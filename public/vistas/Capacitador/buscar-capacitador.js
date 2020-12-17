@@ -1,3 +1,10 @@
+/**
+   * funcionalidad del formulario 
+   * para buscar usuarios con privilegios
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 var appBuscarCapacitador = new Vue({
     el: '#frm-buscar-capacitador',
     

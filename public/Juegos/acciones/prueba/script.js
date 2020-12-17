@@ -1,8 +1,24 @@
+
+/**
+   * script.js-> js principal de juego acciones
+   * codigo que permite colocar las preguntas y opciones de respuesta
+   * 
+   *@version->  17/12/20
+   * @author-> Tania Bonilla  
+   */
+/**
+ * declaracion de variables constantes para agregar elementos de estilo 
+ */
+
 function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}const Component = React.Component;
 const Transition = ReactTransitionGroup.Transition;
 const TransitionGroup = ReactTransitionGroup.TransitionGroup;
 const CSSTransition = ReactTransitionGroup.CSSTransition;
 /**constructor ,llamar pregunta seiguiente */
+/**
+ * clase usando componente react para llenar contenedores en html con preguntas disponibles
+ * en un array
+ */
 class Quiz extends React.Component {
   constructor(props) {
     super(props);_defineProperty(this, "triggerAnimation",

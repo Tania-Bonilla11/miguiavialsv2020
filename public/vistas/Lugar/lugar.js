@@ -1,3 +1,11 @@
+
+/**
+   * funcionalidad del formulario 
+   * para buscar lugares donde impartir capacitacion 
+   * uso de vue para obtener la informacion y enviarlo a backend
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
 var applugar = new Vue({
     el:'#frm-lugar',
     data:{
@@ -10,6 +18,9 @@ var applugar = new Vue({
             msg            :''
             }
         },
+        /**Metodos para guardar lugar
+         * uso de alertify js para mostrar resultado de peticiones
+         */
         methods:{
             guardarLugar:function(){
                 fetch(`private/Modulos/Lugar/procesos.php?proceso=recibirDatos&lugar=${JSON.stringify(this.lugar)}`).then(resp => resp.json()).then(resp=>{

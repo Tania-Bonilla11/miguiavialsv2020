@@ -1,3 +1,13 @@
+/**
+   * script.js-> js principal de juego decisiones
+   * 
+   *@version->  17/12/20
+   * @author-> Tania Bonilla  
+   */
+/**
+ * declaracion de variables constantes para agregar elementos de estilo 
+ */
+
 var Quiz=function(data){
     /**se llaman las clases de html */
     var _=this;
@@ -21,7 +31,9 @@ var Quiz=function(data){
     this.score=0;
     this.wrongCount=0;
     this.rightCount=0;
-
+/**
+ * funcion donde se le atribuye evento a botones
+ */
     this.init=function(){
         _.retry_but.addEventListener("click",_.retry);
         _.show_ans_but.addEventListener("click",_.showAnswer);
@@ -38,7 +50,9 @@ var Quiz=function(data){
             e.stopPropagation();
         }
     }
-
+/**
+ * contador para cuando termine las señales de transito uestre pantalla de resultados
+ */
     this.update=function(){
         if(_.currentIdx+1<_.data_count){
             _.currentIdx++;
@@ -124,7 +138,10 @@ var Quiz=function(data){
 
 
 };
-
+/**
+ * vairiable que contiene la informacion mostrada en forma de array para que se llamen las imagenes
+ * enuncaiados y el valor de respuesta
+ */
 var data=[
     {title:"piensa detenidamente",img:"imgs/img1.jpeg",choices:["Abanderado","Material amontonado","No bloquear la intersección"],answer:"Abanderado"},
     {title:"Observa a detalle.",img:"imgs/img2.png",choices:["Paso de peatones.","No peatones","Escolares."],answer:"Paso de peatones."},

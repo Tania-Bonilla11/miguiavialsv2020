@@ -1,4 +1,14 @@
-
+/**
+   * main.js-> js principal de test prueba libre
+   * codigo que permite colocar las preguntas y opciones de respuesta
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
+/**
+ * declaracion de variables constantes que hacen referencia al numero de preguntas y contenedores
+ * para mostrar la informacion del test
+ */
 
 const questionNUmber= document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
@@ -24,16 +34,16 @@ function setAvailableQuestions(){
 }
 function getNewQuestion(){
  questionNUmber.innerHTML="Pregunta &nbsp;"+(questionCounter+1)+ "&nbsp; de  &nbsp;" + quiz.length;   
- //set question text
- //get random question
+ /**set question text
+ get random question**/
  const questionIndex= availableQuesitons[Math.floor(Math.random()*availableQuesitons.length)];
 //  console.log(questionIndex);
 currentQuestion= questionIndex;
 questionText.innerHTML= currentQuestion.q;
 const index1= availableQuesitons.indexOf(questionIndex);
 availableQuesitons.splice(index1,1)
-//set options 
-//get the length of options
+/**set options 
+get the length of options**/
 const optionLen = currentQuestion.options.length;
 for(let i=0; i<optionLen; i++){
      
@@ -42,10 +52,10 @@ for(let i=0; i<optionLen; i++){
 }
 optionContainer.innerHTML='';
 let animationDelay=0.15;
-// create option html
+/** create option html*/ 
 
 for(let i=0;i<optionLen;i++){
-    //random option
+    /**random option**/
 const optionIndex=availableOptions[Math.floor( Math.random()*availableOptions.length)];   
 const index2= availableOptions.indexOf(optionIndex);
 availableOptions.splice(index2,1);
@@ -67,26 +77,24 @@ questionCounter++;
    
 
 }
-
+/**Funcion para obtener resultado de la respuestae */
 function getResult(element){
 
     const id = parseInt(element.id);
-    //get answer commaring
+    
     if(id=== currentQuestion.answer){
-        //set color
+       /**colocar clase correct lo cual pondra si es correcto el fondo veerde */
         element.classList.add("correct");
         updateAnswerIndicator("correct");
         correctAnswers++;
-    }else{
-        //wrong
-        element.classList.add("correct");
-        updateAnswerIndicator("correct");
     }
     attempt++;
     unclickableOptions();
 
 }
-
+/**
+ * funcion para impedir seleccionar una respuesta distinta a la que el usuario ya ha contestado
+ */
 function unclickableOptions(){
  const optionLen= optionContainer.children.length;
  for(let i=0;i<optionLen;i++){
@@ -157,7 +165,7 @@ function resetQuiz(){
      attempt=0;
 };
 function gotoInstructions(){
-//  hideresultbox
+/** hideresultbox */
  resultBox.classList.add("hide");
  homeBox.classList.remove("hide");
  resetQuiz();
@@ -165,7 +173,7 @@ function gotoInstructions(){
 }
 function startQuiz(){
     resetQuiz();
-    //hide homebox
+    /**hide homebox**/
     homeBox.classList.add("hide");
     quizBox.classList.remove("hide");
 

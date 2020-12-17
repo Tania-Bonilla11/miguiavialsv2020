@@ -1,4 +1,9 @@
-/** codigo que permite mostrar el icono de navbar cuando la panatalla se hace pequeña*/ 
+/**
+   * Funcion activar menu de navbar para pantalla pequeña.
+   * Se coloca propiedad onclick y se agrega boton para cierre del menu.
+   *
+   * @author Tania Bonilla  
+   */
 const activeMenu=()=>{
     const OpenMenuButton=document.getElementById('open-menu-button')
     const closeMenuButton=document.getElementById('close-menu-button')

@@ -1,5 +1,14 @@
-
-
+/**
+   * main.js-> js principal de test ley-transporte 
+   * codigo que permite colocar las preguntas y opciones de respuesta
+   * 
+   *@version  17/12/20
+   * @author Tania Bonilla  
+   */
+/**
+ * declaracion de variables constantes que hacen referencia al numero de preguntas y contenedores
+ * para mostrar la informacion del test
+ */
 const questionNUmber= document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
 const optionContainer=document.querySelector(".option-container");
@@ -7,14 +16,18 @@ const answersIndicatorContainer=document.querySelector(".answers-indicator");
 const homeBox=document.querySelector(".home-box")
 const quizBox=document.querySelector(".quiz-box")
 const resultBox=document.querySelector(".result-box")
-
+/**variables para mantener contadores de puntaje, opciones disponibles,preguntas disponibles
+ * respuestas correctas 
+ */
 let questionCounter=0;
 let currentQuestion;
 let availableQuesitons=[];
 let availableOptions=[];
 let correctAnswers=0;
 let attempt=0;
-
+/**
+ * funcion para colocar las preguntas que se encuentran disponibles 
+ */
 function setAvailableQuestions(){
  const totalQuestion =quiz.length;
  for(let i=0;i<totalQuestion;i++){
@@ -22,21 +35,25 @@ function setAvailableQuestions(){
  }
 
 }
+/**
+ * funcion para obtener la nueva pregunta
+ * de forma aleatoria utilizando el metodo math.random
+ */
 function getNewQuestion(){
  questionNUmber.innerHTML="Pregunta &nbsp;"+(questionCounter+1)+ "&nbsp; de  &nbsp;" + quiz.length;   
- //set question text
- //get random question
+ /**set question text
+ get random question**/
  const questionIndex= availableQuesitons[Math.floor(Math.random()*availableQuesitons.length)];
-//  console.log(questionIndex);
+/**se atribuye el valor de numero de la respuesta al indicador */
 currentQuestion= questionIndex;
 questionText.innerHTML= currentQuestion.q;
 const index1= availableQuesitons.indexOf(questionIndex);
 availableQuesitons.splice(index1,1)
-//set options 
-//get the length of options
+/**set options 
+get the length of options**/
 const optionLen = currentQuestion.options.length;
 for(let i=0; i<optionLen; i++){
-     
+     /**se envian las opciones disponibles */
     availableOptions.push(i);
 
 }
@@ -114,9 +131,11 @@ function next(){
 }
 
 window.onload=function(){
-//coloco las preguntas en posiiones disponibles en el array
+/**coloco las preguntas en posiiones disponibles en el array
+ * */
     setAvailableQuestions();
-//llamamos la funcion para colocar nueva pregunta
+/*
+ llamamos la funcion para colocar nueva pregunta */
     getNewQuestion();
     answersIndicator();
 }
@@ -154,6 +173,7 @@ function tryAgainQuiz(){
     startQuiz();
 
 }
+/**funcion que limpia los contadores para reiniciar juego */
 function resetQuiz(){
      questionCounter=0;
      correctAnswers=0;
